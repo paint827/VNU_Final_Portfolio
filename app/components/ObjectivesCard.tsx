@@ -7,8 +7,8 @@ export default function ObjectivesCard() {
     },
     {
       period: 'Năm 3 - 4',
-      title: 'Chuyên sau và thực hành',
-      description: 'Nghiên cứu chuyên sau, thực tập tại doanh nghiệp',
+      title: 'Chuyên sâu và thực hành',
+      description: 'Nghiên cứu chuyên sâu, thực tập tại doanh nghiệp',
     },
   ];
 
