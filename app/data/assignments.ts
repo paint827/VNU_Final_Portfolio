@@ -18,8 +18,9 @@ export const assignments: Assignment[] = [
     pdfFile: "tmpqfykv9_bai1.pdf",
     externalLink: "https://cdnlms.vnu.edu.vn/dhqg.file.api/uploads/lms/document/25020781/20260324/tmpqfykv9_bai1.pdf",
     documentType: "PDF",
-    objectives: 
-      "Học cách sử dụng các công cụ phần mềm",
+    objectives: [
+      "Học cách sử dụng các công cụ phần mềm"
+    ]
   },
   {
     id: "2",
