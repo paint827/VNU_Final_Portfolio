@@ -1,0 +1,152 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #EBEBEB;
+  --section-background: #F5F5F5;
+  --foreground: #1f2937;
+  --card: #ffffff;
+  --card-foreground: #1f2937;
+  --popover: #ffffff;
+  --popover-foreground: #1f2937;
+  --primary: #1f2937;
+  --primary-foreground: #ffffff;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #374151;
+  --muted: #eeeeee;
+  --muted-foreground: #4b5563;
+  --accent: #1f2937;
+  --accent-foreground: #ffffff;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #d1d5db;
+  --input: #d1d5db;
+  --ring: #1f2937;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: #15191E;
+  --section-background: #191E25;
+  --foreground: #e5e7eb;
+  --card: #1D232A;
+  --card-foreground: #e5e7eb;
+  --popover: #1B1D24;
+  --popover-foreground: #e5e7eb;
+  --primary: #e5e7eb;
+  --primary-foreground: #151921;
+  --secondary: #252d3d;
+  --secondary-foreground: #e5e7eb;
+  --muted: #20243B;
+  --muted-foreground: #9ca3af;
+  --accent: #5958EA;
+  --accent-foreground: #151921;
+  --destructive: #ef4444;
+  --destructive-foreground: #e5e7eb;
+  --border: #2d3748;
+  --input: #2d3748;
+  --ring: #5958EA;
+}
+
+/* Base styles - only set border-color when border-width is explicitly set */
+*,
+*::before,
+*::after {
+  border-color: var(--border);
+  border-width: 0;
+  border-style: solid;
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+html {
+  background-color: var(--background);
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+/* Utility classes using CSS variables - NO @theme to avoid oklab */
+.bg-background { background-color: var(--background) !important; }
+.bg-section-background { background-color: var(--section-background) !important; }
+.bg-foreground { background-color: var(--foreground) !important; }
+.bg-card { background-color: var(--card) !important; }
+.bg-popover { background-color: var(--popover) !important; }
+.bg-primary { background-color: var(--primary) !important; }
+.bg-secondary { background-color: var(--secondary) !important; }
+.bg-muted { background-color: var(--muted) !important; }
+.bg-accent { background-color: var(--accent) !important; }
+.bg-destructive { background-color: var(--destructive) !important; }
+
+.text-foreground { color: var(--foreground) !important; }
+.text-card-foreground { color: var(--card-foreground) !important; }
+.text-popover-foreground { color: var(--popover-foreground) !important; }
+.text-primary { color: var(--primary) !important; }
+.text-primary-foreground { color: var(--primary-foreground) !important; }
+.text-secondary-foreground { color: var(--secondary-foreground) !important; }
+.text-muted-foreground { color: var(--muted-foreground) !important; }
+.text-accent { color: var(--accent) !important; }
+.text-accent-foreground { color: var(--accent-foreground) !important; }
+.text-destructive { color: var(--destructive) !important; }
+.text-destructive-foreground { color: var(--destructive-foreground) !important; }
+
+.border-border { border-color: var(--border) !important; }
+.border-input { border-color: var(--input) !important; }
+.border-primary { border-color: var(--primary) !important; }
+.border-accent { border-color: var(--accent) !important; }
+
+.ring-ring { --tw-ring-color: var(--ring) !important; }
+.ring-primary { --tw-ring-color: var(--primary) !important; }
+.ring-accent { --tw-ring-color: var(--accent) !important; }
+.ring-foreground { --tw-ring-color: var(--foreground) !important; }
+.ring-foreground\/20 { --tw-ring-color: rgba(31, 41, 55, 0.2) !important; }
+
+.outline-ring\/50 { outline-color: color-mix(in srgb, var(--ring) 50%, transparent) !important; }
+
+/* Dark mode specific overrides */
+.dark .dark\:ring-accent { --tw-ring-color: #5958EA !important; }
+.dark .dark\:text-accent { color: #5958EA !important; }
+.dark .dark\:bg-accent { background-color: #5958EA !important; }
+
+/* Hover states */
+.hover\:bg-muted:hover { background-color: var(--muted) !important; }
+.hover\:bg-accent:hover { background-color: var(--accent) !important; }
+.hover\:bg-secondary:hover { background-color: var(--secondary) !important; }
+.hover\:text-accent:hover { color: var(--accent) !important; }
+.hover\:text-foreground:hover { color: var(--foreground) !important; }
+
+/* Timeline utilities */
+.timeline-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 3px;
+  top: 0.5rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 9999px;
+  background-color: var(--muted-foreground);
+}
+
+.timeline-line {
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: var(--muted);
+}
