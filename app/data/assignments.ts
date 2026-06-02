@@ -14,12 +14,14 @@ export const assignments: Assignment[] = [
     id: "1",
     title: "Bài tập 1",
     Vietnamese: "Bài 1 - Mục 1.4",
-    description: "Thao tác cơ bản với tệp tin và thư mục",
+    description: "Thiết lập nền tảng Portfolio và tìm hiểu các công cụ cần thiết",
     pdfFile: "tmpqfykv9_bai1.pdf",
     externalLink: "https://cdnlms.vnu.edu.vn/dhqg.file.api/uploads/lms/document/25020781/20260324/tmpqfykv9_bai1.pdf",
     documentType: "PDF",
     objectives: [
-      "Rèn luyện kỹ năng tạo, đổi tên, sao chép, di chuyển, xóa tệp tin và thư mục một cách thành thạo trên hệ điều hành Windows (có thể điều chỉnh cho macOS/Linux)."
+      "Học cách sử dụng các công cụ phần mềm",
+      "Xây dựng website hoặc blog miễn phí",
+      "Thiết kế một trang Portfolio cá nhân"
     ]
   },
   {

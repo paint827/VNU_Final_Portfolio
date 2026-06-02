@@ -31,14 +31,14 @@ export default function ProfileCard() {
       
       const link = document.createElement('a');
       link.href = dataUrl;
-      link.download = 'gay.jpg';
+      link.download = 'tran_thanh_son_portfolio.jpg';
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
       
       setIsDownloading(false);
     } catch (error) {
-      alert('Failed to download portfolio. Please try again.');
+      alert('Không thể tải xuống portfolio. Vui lòng thử lại.');
       setIsDownloading(false);
     }
   };
@@ -46,12 +46,12 @@ export default function ProfileCard() {
   return (
     <>
       <ImagePreview 
-        src="/gay.jpg" 
+        src="/son.jpg" 
         alt="Trần Thanh Sơn" 
         isOpen={isPreviewOpen}
         onClose={() => setIsPreviewOpen(false)}
       />
-      <div className="bg-card rounded-lg p-6 text-center">
+      <div className="bg-card rounded-lg p-6 pb-4 text-center">
         <div className="flex justify-center mb-4">
           <button
             onClick={() => setIsPreviewOpen(true)}
@@ -59,7 +59,7 @@ export default function ProfileCard() {
             aria-label="View profile picture"
           >
             <Image
-              src="/gay.jpg"
+              src="/son.jpg"
               alt="Trần Thanh Sơn"
               fill
               className="object-cover"
@@ -67,11 +67,13 @@ export default function ProfileCard() {
             />
           </button>
         </div>
-        <h1 className="text-xl font-bold text-foreground mb-2">Trần Thanh Sơn</h1>
+        <h1 className="text-2xl font-bold text-foreground mb-2">Trần Thanh Sơn</h1>
         <p className="text-sm text-muted-foreground leading-relaxed">
           Sinh viên K70E-CE2 | Kỹ thuật Máy tính
           <br />
-          Đại học Công nghệ - ĐHQGHN
+          <a href="https://uet.vnu.edu.vn/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+            Đại học Công nghệ - ĐHQGHN
+          </a>
         </p>
         <div className="mt-4">
           <button

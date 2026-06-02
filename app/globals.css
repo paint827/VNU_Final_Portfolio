@@ -38,15 +38,15 @@
   --primary-foreground: #151921;
   --secondary: #252d3d;
   --secondary-foreground: #e5e7eb;
-  --muted: #20243B;
+  --muted: #202f3b;
   --muted-foreground: #9ca3af;
-  --accent: #5958EA;
+  --accent: #58b0ea;
   --accent-foreground: #151921;
   --destructive: #ef4444;
   --destructive-foreground: #e5e7eb;
   --border: #2d3748;
   --input: #2d3748;
-  --ring: #5958EA;
+  --ring: #58b0ea;
 }
 
 /* Base styles - only set border-color when border-width is explicitly set */
@@ -114,9 +114,9 @@ html {
 .outline-ring\/50 { outline-color: color-mix(in srgb, var(--ring) 50%, transparent) !important; }
 
 /* Dark mode specific overrides */
-.dark .dark\:ring-accent { --tw-ring-color: #5958EA !important; }
-.dark .dark\:text-accent { color: #5958EA !important; }
-.dark .dark\:bg-accent { background-color: #5958EA !important; }
+.dark .dark\:ring-accent { --tw-ring-color: #58b0ea !important; }
+.dark .dark\:text-accent { color: #58b0ea !important; }
+.dark .dark\:bg-accent { background-color: #58b0ea !important; }
 
 /* Hover states */
 .hover\:bg-muted:hover { background-color: var(--muted) !important; }

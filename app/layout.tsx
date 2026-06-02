@@ -44,7 +44,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased min-h-screen" suppressHydrationWarning>
+      <body className="font-sans antialiased min-h-screen" style={{ fontFamily: 'Geist' }} suppressHydrationWarning>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
