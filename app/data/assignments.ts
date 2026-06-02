@@ -14,28 +14,24 @@ export const assignments: Assignment[] = [
     id: "1",
     title: "Bài tập 1",
     Vietnamese: "Bài 1 - Mục 1.4",
-    description: "Thiết lập nền tảng Portfolio và tìm hiểu các công cụ cần thiết",
+    description: "Thao tác cơ bản với tệp tin và thư mục",
     pdfFile: "tmpqfykv9_bai1.pdf",
     externalLink: "https://cdnlms.vnu.edu.vn/dhqg.file.api/uploads/lms/document/25020781/20260324/tmpqfykv9_bai1.pdf",
     documentType: "PDF",
     objectives: [
-      "Học cách sử dụng các công cụ phần mềm",
-      "Xây dựng website hoặc blog miễn phí",
-      "Thiết kế một trang Portfolio cá nhân"
+      "Rèn luyện kỹ năng tạo, đổi tên, sao chép, di chuyển, xóa tệp tin và thư mục một cách thành thạo trên hệ điều hành Windows (có thể điều chỉnh cho macOS/Linux)."
     ]
   },
   {
     id: "2",
     title: "Bài tập 2",
     Vietnamese: "Bài 2 - Mục 2.4",
-    description: "Tìm kiếm và dàn bố thông tin học thuật",
+    description: "Tìm kiếm và đánh giá thông tin học thuật",
     pdfFile: "tmpunozz3_baitaptuan2.pdf",
     externalLink: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fcdnlms.vnu.edu.vn%2Fdhqg.file.api%2Fuploads%2Flms%2Fdocument%2F25020781%2F20260404%2Ftmpunozz3_baitaptuan2.docx&wdOrigin=BROWSELINK",
     documentType: "DOCX",
     objectives: [
-      "Tìm kiếm các kết quả bài tập thành phần",
-      "Dàn bố các kết quả một cách logic và rõ ràng",
-      "Lựa chọn thông tin quan trọng nhất"
+      "Phát triển kỹ năng tìm kiếm và đánh giá thông tin học thuật từ các nguồn đáng tin cậy."
     ]
   },
   {
@@ -49,7 +45,8 @@ export const assignments: Assignment[] = [
     objectives: [
       "Tạo các Prompt có hiệu quả",
       "So sánh Prompt ban đầu và Prompt cải tiến",
-      "Sử dụng AI một cách hiệu quả trong học tập"
+      "Sử dụng AI một cách hiệu quả trong học tập",
+      "Phát triển kỹ năng viết prompt hiệu quả để tận dụng tối đa khả năng của các mô hình ngôn ngữ lớn trong học tập."
     ]
   },
   {
@@ -61,9 +58,7 @@ export const assignments: Assignment[] = [
     externalLink: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fcdnlms.vnu.edu.vn%2Fdhqg.file.api%2Fuploads%2Flms%2Fdocument%2F25020781%2F20260503%2Ftmpz0gmtd_bai-tap-3.docx&wdOrigin=BROWSELINK",
     documentType: "PDF",
     objectives: [
-      "Minh chứng về việc sử dụng công cụ quản lý dự án",
-      "Hoàn thành các phần của dự án nhóm",
-      "Hợp tác hiệu quả với các thành viên khác"
+      "Thành thạo các công cụ hợp tác trực tuyến và thể hiện năng lực quản lý, điều phối cá nhân trong dự án nhóm."
     ]
   },
   {
@@ -75,9 +70,7 @@ export const assignments: Assignment[] = [
     externalLink: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fcdnlms.vnu.edu.vn%2Fdhqg.file.api%2Fuploads%2Flms%2Fdocument%2F25020781%2F20260505%2Ftmpbyzx0f_battap_tranthanhson.docx&wdOrigin=BROWSELINK",
     documentType: "DOCX",
     objectives: [
-      "Trưng bày sản phẩm nội dung được hỗ trợ bởi AI",
-      "Tìm kiếm độc lập trí tuệ và hỗ trợ từ AI",
-      "Phân tích tác động của AI trong sáng tạo"
+      "Thành thạo việc sử dụng các công cụ AI tạo sinh để hỗ trợ quá trình sáng tạo nội dung số."
     ]
   },
   {
@@ -89,9 +82,7 @@ export const assignments: Assignment[] = [
     externalLink: "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fcdnlms.vnu.edu.vn%2Fdhqg.file.api%2Fuploads%2Flms%2Fdocument%2F25020781%2F20260525%2Ftmpkjcb2y_25020781_tranthanhson_trachnhiemai.docx&wdOrigin=BROWSELINK",
     documentType: "PDF",
     objectives: [
-      "Tìm hiểu các vấn đề đạo đức của AI",
-      "Áp dụng AI một cách có trách nhiệm",
-      "Tham khảo ý kiến chuyên gia về sử dụng AI đạo đức"
+      "Phát triển kỹ năng sử dụng AI có trách nhiệm và đạo đức trong học tập và nghiên cứu."
     ]
   }
 ];
