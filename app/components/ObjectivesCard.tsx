@@ -13,17 +13,17 @@ export default function ObjectivesCard() {
   ];
 
   return (
-    <div className="bg-card rounded-lg p-6">
-      <h2 className="text-base font-semibold text-foreground mb-4">Mục tiêu học tập</h2>
+    <div className="bg-card rounded-2xl p-6 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
+      <h2 className="text-lg font-bold tracking-tight text-foreground mb-4">Mục tiêu học tập</h2>
       <div className="relative">
         <div className="timeline-line" />
         <div className="space-y-4"></div>
         <div className="space-y-4">
           {objectives.map((obj, index) => (
             <div key={index} className="timeline-item">
-              <p className="text-xs text-primary font-medium">{obj.period}</p>
-              <p className="text-sm font-semibold text-foreground">{obj.title}</p>
-              <p className="text-xs text-muted-foreground">{obj.description}</p>
+              <p className="text-sm text-primary font-medium">{obj.period}</p>
+              <p className="text-base font-semibold text-foreground">{obj.title}</p>
+              <p className="text-sm text-muted-foreground">{obj.description}</p>
             </div>
           ))}
         </div>

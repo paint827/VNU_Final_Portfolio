@@ -51,11 +51,11 @@ export default function ProfileCard() {
         isOpen={isPreviewOpen}
         onClose={() => setIsPreviewOpen(false)}
       />
-      <div className="bg-card rounded-lg p-6 pb-4 text-center">
+      <div className="bg-card rounded-2xl p-6 pb-4 text-center shadow-sm border border-border/50 hover:shadow-md transition-shadow">
         <div className="flex justify-center mb-4">
           <button
             onClick={() => setIsPreviewOpen(true)}
-            className="relative w-32 h-32 rounded-full overflow-hidden ring-4 ring-offset-2 ring-foreground/20 dark:ring-accent hover:opacity-80 transition-opacity dark:ring-offset-[#1D232A] cursor-pointer"
+            className="relative w-32 h-32 rounded-full overflow-hidden ring-4 ring-offset-2 ring-foreground/10 dark:ring-accent/80 hover:ring-accent transition-all dark:ring-offset-[#1D232A] cursor-pointer shadow-lg hover:scale-105"
             aria-label="View profile picture"
           >
             <Image
@@ -67,8 +67,8 @@ export default function ProfileCard() {
             />
           </button>
         </div>
-        <h1 className="text-2xl font-bold text-foreground mb-2">Trần Thanh Sơn</h1>
-        <p className="text-sm text-muted-foreground leading-relaxed">
+        <h1 className="text-3xl font-bold tracking-tight text-foreground mb-2">Trần Thanh Sơn</h1>
+        <p className="text-base text-muted-foreground leading-relaxed">
           Sinh viên K70E-CE2 | Kỹ thuật Máy tính
           <br />
           <a href="https://uet.vnu.edu.vn/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">

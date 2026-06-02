@@ -1,21 +1,46 @@
+import React from 'react';
+
 export default function TechStackCard() {
   const skills = [
-    'Python',
-    'C',
-    'Linux',
+    {
+      name: 'Python',
+      color: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-400 border border-blue-200 dark:border-blue-800',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-4 h-4 mr-1.5" fill="currentColor">
+          <path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4 .1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8 .1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3 .1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z"/>
+        </svg>
+      )
+    },
+    {
+      name: 'C',
+      color: 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/30 dark:text-indigo-400 border border-indigo-200 dark:border-indigo-800',
+      icon: (
+        <span className="font-bold text-[14px] mr-1.5 leading-none">C</span>
+      )
+    },
+    {
+      name: 'Linux',
+      color: 'bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400 border border-amber-200 dark:border-amber-800',
+      icon: (
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-4 h-4 mr-1.5" fill="currentColor">
+          <path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5 .2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4 .2-.8 .7-.6 1.1 .3 1.3 2.3 1.1 3.4 1.7zm-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6 .2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5 .1-1.3 .6-3.4 1.5-3.2 2.9 .1 1 1.8 1.5 2.8 1.4zM420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7 .1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 31.6-17.7 53.3-35.2 74.1-16.3 19.3-38.6 45.8-51.2 78-10.2 26-11.1 55.4-.5 84 0 .2 .1 .3 .1 .5-1.5 .6-2.9 1.3-4.2 2.1-1.4 .9-2.7 1.9-4 3.1-6.6 5.6-8.6 14.3-10.4 22.4-1.9 8.1-3.6 15.7-7.2 19.7-6.5 7.2-16.2 10.7-27.4 10.7-5.5 0-11.3-1.1-17.1-3.4-3.7-1.5-6.1-5-6-9 .1-3.6 2.6-6.8 6.2-8 3.5-1.2 7-1.8 10.1-1.8 6 0 9.7-2 11-3.5 1.7-1.9 2.9-7 4.5-14.2 1.8-8.5 4.3-19.6 13-28.7 10.7-11.3 26.6-14.8 40.5-10.5 4.9 1.5 9.4 3.9 13.5 7.1 20.3 15.9 33 27 57.6 27 20 0 35.8-7.7 54.4-15.6 17.6-7.5 37.6-16.1 63.3-16.1 25.1 0 44.5 8.3 61.6 15.7 18.2 7.8 33.6 14.5 53.1 14.5 25.5 0 38.6-11.5 59.4-27.9 4-3.2 8.4-5.6 13.2-7.1 13.9-4.3 29.8-.8 40.5 10.5 8.7 9.1 11.2 20.2 13 28.7 1.6 7.2 2.8 12.3 4.5 14.2 1.3 1.5 5 3.5 11 3.5 3 0 6.6-.6 10.1-1.8 3.6-1.2 6.2-4.4 6.2-8 .1-4-2.3-7.5-6-9-5.8-2.3-11.5-3.4-17.1-3.4-11.4 .1-21.1-3.4-27.6-10.6zM245.6 113.8c-11.5 0-23.2-6.1-23.2-18.4 0-14.3 12.9-20 25.5-20 16 0 25.5 10.5 25.5 22.3 0 11.8-11.5 16.1-27.8 16.1zm-40.4-3.4c-9.1 0-19.9-5-19.9-15.9 0-12.7 11.5-17.7 22.3-17.7 14.5 0 22.3 9.4 22.3 19.9 0 10.6-10.3 13.7-24.7 13.7z"/>
+        </svg>
+      )
+    },
   ];
 
   return (
-    <div className="bg-card rounded-lg p-6">
-      <h2 className="text-base font-semibold text-foreground mb-4">Tech Stack</h2>
-      <div className="flex flex-wrap gap-2">
+    <div className="bg-card rounded-2xl p-6 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
+      <h2 className="text-lg font-bold tracking-tight text-foreground mb-4">Tech Stack</h2>
+      <div className="flex flex-wrap gap-3">
         {skills.map((skill) => (
-          <span
-            key={skill}
-            className="px-3 py-1 bg-primary text-primary-foreground text-xs rounded-full"
+          <div
+            key={skill.name}
+            className={`flex items-center px-3.5 py-1.5 text-sm font-medium rounded-full transition-transform hover:scale-105 ${skill.color}`}
           >
-            {skill}
-          </span>
+            {skill.icon}
+            {skill.name}
+          </div>
         ))}
       </div>
     </div>

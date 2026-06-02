@@ -9,14 +9,14 @@ export default function PortfolioGoalsSection() {
   ];
 
   return (
-    <div className="bg-section-background rounded-lg p-6 shadow-md hover:shadow-lg transition-all">
+    <div className="bg-section-background rounded-3xl p-8 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
       <div className="flex items-center gap-3 mb-4">
         <div className="p-2 bg-muted rounded-lg">
           <Target className="h-5 w-5 text-muted-foreground" />
         </div>
         <div>
-          <h2 className="text-lg font-semibold text-foreground">Mục tiêu của Portfolio này</h2>
-          <p className="text-sm text-muted-foreground">Dự án cá nhân - Bài tập</p>
+          <h2 className="text-xl font-bold tracking-tight text-foreground">Mục tiêu của Portfolio này</h2>
+          <p className="text-base text-muted-foreground">Dự án cá nhân - Bài tập</p>
         </div>
       </div>
       
@@ -24,13 +24,13 @@ export default function PortfolioGoalsSection() {
         {goals.map((goal, index) => (
           <div key={index} className="flex items-start gap-3">
             <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
-            <p className="text-sm text-muted-foreground leading-relaxed">{goal}</p>
+            <p className="text-base text-muted-foreground leading-relaxed">{goal}</p>
           </div>
         ))}
       </div>
       
       <div className="mt-2 p-4 bg-muted/50 rounded-lg border border-border">
-        <p className="text-xs text-muted-foreground italic">
+        <p className="text-sm text-muted-foreground italic leading-relaxed">
           Portfolio này không chỉ là một bài tập học phần mà còn là một công cụ hữu ích để tôi giới thiệu bản thân, năng lực và những thành quả học tập của mình trong tương lai. Dự án được xây dựng bằng cách tổng hợp và tích hợp các bài tập, sản phẩm từ nhiều chương học khác nhau vào một hệ thống thống nhất, qua đó thể hiện quá trình học tập, phát triển kỹ năng và khả năng vận dụng kiến thức vào thực tế.
         </p>
       </div>

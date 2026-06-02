@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="vi" className="light bg-background" suppressHydrationWarning>
+    <html lang="vi" className="light" suppressHydrationWarning>
       <head>
         <script suppressHydrationWarning
           dangerouslySetInnerHTML={{

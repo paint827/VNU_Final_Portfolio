@@ -14,7 +14,7 @@ export default function InfoCard() {
   ];
 
   return (
-    <div className="bg-card rounded-lg p-6">
+    <div className="bg-card rounded-2xl p-6 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
       <div className="space-y-3">
         {info.map((item, index) => (
           <div key={index} className="flex items-center justify-between text-sm">

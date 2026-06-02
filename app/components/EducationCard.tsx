@@ -13,16 +13,16 @@ export default function EducationCard() {
   ];
 
   return (
-    <div className="bg-card rounded-lg p-6">
-      <h2 className="text-base font-semibold text-foreground mb-4">Học vấn</h2>
+    <div className="bg-card rounded-2xl p-6 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
+      <h2 className="text-lg font-bold tracking-tight text-foreground mb-4">Học vấn</h2>
       <div className="relative">
         <div className="timeline-line" />
         <div className="space-y-4">
           {education.map((edu, index) => (
             <div key={index} className="timeline-item">
-              <p className="text-xs text-muted-foreground">{edu.period}</p>
-              <p className="text-sm font-semibold text-foreground">{edu.degree}</p>
-              <p className="text-xs text-muted-foreground">{edu.institution}</p>
+              <p className="text-sm text-muted-foreground">{edu.period}</p>
+              <p className="text-base font-semibold text-foreground">{edu.degree}</p>
+              <p className="text-sm text-muted-foreground">{edu.institution}</p>
             </div>
           ))}
         </div>

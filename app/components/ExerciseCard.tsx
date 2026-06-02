@@ -19,23 +19,23 @@ export default function ExerciseCard({ assignment }: ExerciseCardProps) {
   return (
     <Link
       href={`/bai-tap/${assignment.id}`}
-      className="flex flex-col h-full bg-card rounded-lg p-4 hover:bg-card/80 transition-all group shadow-md hover:shadow-xl"
+      className="flex flex-col h-full bg-card rounded-2xl p-5 hover:bg-card/80 transition-all group shadow-sm border border-border/50 hover:shadow-lg hover:-translate-y-1"
     >
       <div className="flex items-start gap-2 mb-2">
-        <ExternalLink className="h-4 w-4 mt-0.5 text-muted-foreground group-hover:text-foreground transition-colors flex-shrink-0" />
-        <h3 className="font-semibold text-foreground group-hover:text-foreground transition-colors">
+        <ExternalLink className="h-5 w-5 mt-0.5 text-muted-foreground group-hover:text-foreground transition-colors flex-shrink-0" />
+        <h3 className="text-lg font-semibold tracking-tight text-foreground group-hover:text-foreground transition-colors">
           {assignment.title}
         </h3>
       </div>
-      <p className="text-sm text-muted-foreground mb-3 flex-1">
+      <p className="text-base text-muted-foreground mb-3 flex-1">
         {assignment.description}
       </p>
-      <div className="flex items-center justify-between text-xs mt-auto">
+      <div className="flex items-center justify-between text-sm mt-auto">
         <div className="flex items-center gap-1.5">
-          <span className={`w-2.5 h-2.5 rounded-full ${dotColor}`} />
+          <span className={`w-3 h-3 rounded-full ${dotColor}`} />
           <span className="text-muted-foreground">{assignment.documentType}</span>
         </div>
-        <span className="px-2 py-0.5 bg-primary/10 text-primary rounded-full text-xs font-medium">
+        <span className="px-2.5 py-0.5 bg-primary/10 text-primary rounded-full text-sm font-medium">
           {assignment.Vietnamese}
         </span>
       </div>

@@ -51,10 +51,10 @@ export default function ThemeCard() {
 
   if (!mounted) {
     return (
-      <div className="bg-card rounded-lg p-6">
+      <div className="bg-card rounded-2xl p-6 shadow-sm border border-border/50 hover:shadow-md transition-shadow">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-base font-semibold text-foreground">Giao diện</h2>
+            <h2 className="text-lg font-bold tracking-tight text-foreground">Giao diện</h2>
             <p className="text-sm text-muted-foreground">Sáng</p>
           </div>
           <div className="p-2 rounded-md">
@@ -66,10 +66,10 @@ export default function ThemeCard() {
   }
 
   return (
-    <div className="bg-card rounded-lg p-6 relative" ref={dropdownRef}>
+    <div className="bg-card rounded-2xl p-6 relative shadow-sm border border-border/50 hover:shadow-md transition-shadow" ref={dropdownRef}>
       <div className="flex items-center justify-between">
         <div>
-          <h2 className="text-base font-semibold text-foreground">Giao diện</h2>
+          <h2 className="text-lg font-bold tracking-tight text-foreground">Giao diện</h2>
           <p className="text-sm text-muted-foreground">{currentTheme.name}</p>
         </div>
         <button
